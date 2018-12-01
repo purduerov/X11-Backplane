@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="8.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -768,9 +768,6 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
-<param name="checkNames" value="1"/>
-<param name="checkWireStubs" value="1"/>
-<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -875,9 +872,20 @@ design rules under a new name.</description>
 <element name="U$2" library="THICC_CONNECTOR" package="THICC_CONNECTOR" value="THICC_CONNECTOR" x="43.0214625" y="49.079271875" rot="R120"/>
 <element name="U$3" library="THICC_CONNECTOR" package="THICC_CONNECTOR" value="THICC_CONNECTOR" x="64.8" y="95.45"/>
 <element name="U$4" library="THICC_CONNECTOR" package="THICC_CONNECTOR" value="THICC_CONNECTOR" x="94.05" y="53.4" rot="R240"/>
-<element name="ESC5_CON1" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="-3.3" y="72" rot="R120">
-<attribute name="NAME" x="-3.056921875" y="61.978971875" size="1.27" layer="21" rot="R120"/>
+<element name="ESC5_CON1" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="36.45" y="78" rot="MR240">
+<attribute name="NAME" x="27.893075" y="83.221025" size="1.27" layer="22" rot="MR240"/>
 </element>
+<element name="ESC5_CON2" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="45.365190625" y="62.612915625" rot="MR240"/>
+<element name="ESC5_CON3" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-18"/>
+<element name="ESC5_CON4" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-43"/>
+<element name="ESC5_CON5" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-68"/>
+<element name="ESC5_CON6" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-93"/>
+<element name="ESC5_CON7" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-118"/>
+<element name="ESC5_CON8" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-143"/>
+<element name="ESC5_CON9" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-168"/>
+<element name="ESC5_CON10" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-193"/>
+<element name="ESC5_CON11" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-218"/>
+<element name="ESC5_CON12" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="14.3" y="-243"/>
 </elements>
 <signals>
 <signal name="B1">
@@ -895,6 +903,8 @@ design rules under a new name.</description>
 <vertex x="13.65759375" y="69.986328125"/>
 <vertex x="11.06094375" y="74.48385625"/>
 </polygon>
+<contactref element="ESC5_CON1" pad="C"/>
+<wire x1="20.5672" y1="75.271190625" x2="38.99" y2="73.600590625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y1">
 <contactref element="U$2" pad="P2-22"/>
@@ -911,6 +921,8 @@ design rules under a new name.</description>
 <vertex x="10.90759375" y="74.749465625"/>
 <vertex x="8.31094375" y="79.246996875"/>
 </polygon>
+<contactref element="ESC5_CON1" pad="B"/>
+<wire x1="17.8172" y1="80.03433125" x2="36.45" y2="78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R1">
 <contactref element="U$2" pad="P1-1"/>
@@ -927,6 +939,8 @@ design rules under a new name.</description>
 <vertex x="8.17344375" y="79.52175625"/>
 <vertex x="5.53929375" y="84.0842375"/>
 </polygon>
+<contactref element="ESC5_CON1" pad="A"/>
+<wire x1="15.0672" y1="84.797471875" x2="33.91" y2="82.39940625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R2">
 <contactref element="U$2" pad="P2-13"/>
@@ -943,6 +957,8 @@ design rules under a new name.</description>
 <vertex x="16.42344375" y="65.2323375"/>
 <vertex x="13.83594375" y="69.71401875"/>
 </polygon>
+<contactref element="ESC5_CON2" pad="A"/>
+<wire x1="23.3172" y1="70.508053125" x2="42.825190625" y2="67.012321875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B2">
 <contactref element="U$2" pad="P2-1"/>
@@ -959,6 +975,8 @@ design rules under a new name.</description>
 <vertex x="22.00759375" y="55.523703125"/>
 <vertex x="19.31094375" y="60.1944375"/>
 </polygon>
+<contactref element="ESC5_CON2" pad="C"/>
+<wire x1="28.8172" y1="60.981771875" x2="47.905190625" y2="58.21350625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y2">
 <contactref element="U$2" pad="P2-9"/>
@@ -975,6 +993,8 @@ design rules under a new name.</description>
 <vertex x="19.15759375" y="60.460046875"/>
 <vertex x="16.56094375" y="64.957578125"/>
 </polygon>
+<contactref element="ESC5_CON2" pad="B"/>
+<wire x1="26.0672" y1="65.7449125" x2="45.365190625" y2="62.612915625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R4">
 <contactref element="U$2" pad="P3-5"/>
@@ -991,6 +1011,8 @@ design rules under a new name.</description>
 <vertex x="43.15895625" y="38.341853125"/>
 <vertex x="45.88975625" y="33.611965625"/>
 </polygon>
+<contactref element="ESC5_CON4" pad="A"/>
+<wire x1="37.877009375" y1="30.289721875" x2="9.22" y2="-43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y4">
 <contactref element="U$2" pad="P3-9"/>
@@ -1007,6 +1029,8 @@ design rules under a new name.</description>
 <vertex x="46.054709375" y="33.35305625"/>
 <vertex x="48.642209375" y="28.871378125"/>
 </polygon>
+<contactref element="ESC5_CON4" pad="B"/>
+<wire x1="40.627009375" y1="25.52658125" x2="14.3" y2="-43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B4">
 <contactref element="U$2" pad="P3-13"/>
@@ -1023,6 +1047,8 @@ design rules under a new name.</description>
 <vertex x="48.80895625" y="28.59236875"/>
 <vertex x="51.40560625" y="24.0948375"/>
 </polygon>
+<contactref element="ESC5_CON4" pad="C"/>
+<wire x1="43.377009375" y1="20.76344375" x2="19.38" y2="-43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R3">
 <contactref element="U$2" pad="P3-17"/>
@@ -1039,6 +1065,8 @@ design rules under a new name.</description>
 <vertex x="51.54310625" y="23.820078125"/>
 <vertex x="54.13975625" y="19.322546875"/>
 </polygon>
+<contactref element="ESC5_CON3" pad="A"/>
+<wire x1="46.127009375" y1="16.000303125" x2="9.22" y2="-18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B3">
 <contactref element="U$2" pad="P4-5"/>
@@ -1055,6 +1083,8 @@ design rules under a new name.</description>
 <vertex x="57.05895625" y="14.30295"/>
 <vertex x="59.65895625" y="9.799615625"/>
 </polygon>
+<contactref element="ESC5_CON3" pad="C"/>
+<wire x1="51.627009375" y1="6.474025" x2="19.38" y2="-18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y3">
 <contactref element="U$2" pad="P4-17"/>
@@ -1071,6 +1101,8 @@ design rules under a new name.</description>
 <vertex x="54.30895625" y="19.0660875"/>
 <vertex x="56.89645625" y="14.58440625"/>
 </polygon>
+<contactref element="ESC5_CON3" pad="B"/>
+<wire x1="48.877009375" y1="11.2371625" x2="14.3" y2="-18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CAN_L">
 <contactref element="U$2" pad="23"/>
@@ -1099,17 +1131,26 @@ design rules under a new name.</description>
 <contactref element="U$3" pad="8"/>
 <contactref element="U$4" pad="7"/>
 <contactref element="U$4" pad="8"/>
-<wire x1="58.91" y1="105.25" x2="61.45" y2="105.25" width="0" layer="19" extent="1-1"/>
-<wire x1="61.45" y1="102.71" x2="61.45" y2="105.25" width="0" layer="19" extent="1-1"/>
-<wire x1="58.91" y1="102.71" x2="58.91" y2="105.25" width="0" layer="19" extent="1-1"/>
-<wire x1="103.28234375" y1="54.8708875" x2="61.45" y2="102.71" width="0" layer="19" extent="1-1"/>
-<wire x1="105.482046875" y1="53.6008875" x2="103.28234375" y2="54.8708875" width="0" layer="19" extent="1-1"/>
-<wire x1="104.212046875" y1="51.401184375" x2="105.482046875" y2="53.6008875" width="0" layer="19" extent="1-1"/>
-<wire x1="102.01234375" y1="52.671184375" x2="103.28234375" y2="54.8708875" width="0" layer="19" extent="1-1"/>
-<wire x1="38.409115625" y1="42.548084375" x2="58.91" y2="102.71" width="0" layer="19" extent="1-1"/>
-<wire x1="36.2094125" y1="41.278084375" x2="38.409115625" y2="42.548084375" width="0" layer="19" extent="1-1"/>
-<wire x1="39.679115625" y1="40.34838125" x2="38.409115625" y2="42.548084375" width="0" layer="19" extent="1-1"/>
-<wire x1="37.4794125" y1="39.07838125" x2="36.2094125" y2="41.278084375" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="57.6" y="106.5"/>
+<vertex x="57.6" y="101.4"/>
+<vertex x="62.6" y="101.4"/>
+<vertex x="62.6" y="106.5"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="37.084934375" y="37.242371875"/>
+<vertex x="41.501665625" y="39.792371875"/>
+<vertex x="39.001665625" y="44.2225"/>
+<vertex x="34.584934375" y="41.6725"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="107.202625" y="54.1425625"/>
+<vertex x="102.785896875" y="56.6925625"/>
+<vertex x="100.285896875" y="52.362434375"/>
+<vertex x="104.702625" y="49.812434375"/>
+</polygon>
+<wire x1="39.679115625" y1="40.34838125" x2="102.01234375" y2="52.671184375" width="0" layer="19" extent="1-1"/>
+<wire x1="61.45" y1="102.71" x2="103.28234375" y2="54.8708875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V_GND">
 <contactref element="U$2" pad="21"/>
@@ -1124,17 +1165,26 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="22"/>
 <contactref element="U$4" pad="13"/>
 <contactref element="U$4" pad="14"/>
-<wire x1="63.99" y1="107.79" x2="66.53" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="66.53" y1="105.25" x2="66.53" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="63.99" y1="105.25" x2="63.99" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="102.942046875" y1="49.201478125" x2="66.53" y2="105.25" width="0" layer="19" extent="1-1"/>
-<wire x1="105.141753125" y1="47.931478125" x2="102.942046875" y2="49.201478125" width="0" layer="19" extent="1-1"/>
-<wire x1="103.871753125" y1="45.731775" x2="105.141753125" y2="47.931478125" width="0" layer="19" extent="1-1"/>
-<wire x1="101.672046875" y1="47.001775" x2="102.942046875" y2="49.201478125" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="63" y="104.1"/>
+<vertex x="67.7" y="104.1"/>
+<vertex x="67.7" y="109"/>
+<vertex x="63" y="109"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="36.463396875" y="43.118909375"/>
+<vertex x="34.113396875" y="47.239228125"/>
+<vertex x="29.869871875" y="44.789228125"/>
+<vertex x="32.219871875" y="40.668909375"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="102.424165625" y="50.666025"/>
+<vertex x="100.074165625" y="46.595703125"/>
+<vertex x="104.317690625" y="44.145703125"/>
+<vertex x="106.667690625" y="48.216025"/>
+</polygon>
 <wire x1="34.9394125" y1="43.477790625" x2="101.672046875" y2="47.001775" width="0" layer="19" extent="1-1"/>
-<wire x1="33.6694125" y1="45.67749375" x2="34.9394125" y2="43.477790625" width="0" layer="19" extent="1-1"/>
-<wire x1="31.46970625" y1="44.40749375" x2="33.6694125" y2="45.67749375" width="0" layer="19" extent="1-1"/>
-<wire x1="32.73970625" y1="42.207790625" x2="34.9394125" y2="43.477790625" width="0" layer="19" extent="1-1"/>
+<wire x1="66.53" y1="105.25" x2="102.942046875" y2="49.201478125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U$2" pad="20"/>
@@ -1149,17 +1199,29 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="19"/>
 <contactref element="U$4" pad="11"/>
 <contactref element="U$4" pad="12"/>
-<wire x1="69.07" y1="107.79" x2="71.61" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="71.61" y1="105.25" x2="71.61" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="69.07" y1="105.25" x2="69.07" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="100.402046875" y1="44.80206875" x2="71.61" y2="105.25" width="0" layer="19" extent="1-1"/>
-<wire x1="102.601753125" y1="43.53206875" x2="100.402046875" y2="44.80206875" width="0" layer="19" extent="1-1"/>
-<wire x1="101.331753125" y1="41.332365625" x2="102.601753125" y2="43.53206875" width="0" layer="19" extent="1-1"/>
-<wire x1="99.132046875" y1="42.602365625" x2="100.402046875" y2="44.80206875" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="68.1" y="109"/>
+<vertex x="72.8" y="109"/>
+<vertex x="72.8" y="104.2"/>
+<vertex x="72.7" y="104.1"/>
+<vertex x="68.1" y="104.1"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="29.669871875" y="45.085640625"/>
+<vertex x="27.319871875" y="49.155959375"/>
+<vertex x="31.47679375" y="51.555959375"/>
+<vertex x="31.613396875" y="51.51935625"/>
+<vertex x="33.913396875" y="47.535640625"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="104.117690625" y="43.79929375"/>
+<vertex x="101.767690625" y="39.728975"/>
+<vertex x="97.61076875" y="42.128975"/>
+<vertex x="97.574165625" y="42.265578125"/>
+<vertex x="99.874165625" y="46.24929375"/>
+</polygon>
 <wire x1="32.3994125" y1="47.8772" x2="99.132046875" y2="42.602365625" width="0" layer="19" extent="1-1"/>
-<wire x1="31.1294125" y1="50.076903125" x2="32.3994125" y2="47.8772" width="0" layer="19" extent="1-1"/>
-<wire x1="28.92970625" y1="48.806903125" x2="31.1294125" y2="50.076903125" width="0" layer="19" extent="1-1"/>
-<wire x1="30.19970625" y1="46.6072" x2="32.3994125" y2="47.8772" width="0" layer="19" extent="1-1"/>
+<wire x1="71.61" y1="105.25" x2="100.402046875" y2="44.80206875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V_GND">
 <contactref element="U$2" pad="17"/>
@@ -1174,17 +1236,26 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="18"/>
 <contactref element="U$4" pad="9"/>
 <contactref element="U$4" pad="10"/>
-<wire x1="74.15" y1="107.79" x2="76.69" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="76.69" y1="105.25" x2="76.69" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="74.15" y1="105.25" x2="74.15" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="97.862046875" y1="40.402659375" x2="76.69" y2="105.25" width="0" layer="19" extent="1-1"/>
-<wire x1="100.061753125" y1="39.132659375" x2="97.862046875" y2="40.402659375" width="0" layer="19" extent="1-1"/>
-<wire x1="96.592046875" y1="38.20295625" x2="97.862046875" y2="40.402659375" width="0" layer="19" extent="1-1"/>
-<wire x1="98.791753125" y1="36.93295625" x2="100.061753125" y2="39.132659375" width="0" layer="19" extent="1-1"/>
-<wire x1="28.5894125" y1="54.4763125" x2="74.15" y2="105.25" width="0" layer="19" extent="1-1"/>
-<wire x1="29.8594125" y1="52.276609375" x2="28.5894125" y2="54.4763125" width="0" layer="19" extent="1-1"/>
-<wire x1="26.38970625" y1="53.2063125" x2="28.5894125" y2="54.4763125" width="0" layer="19" extent="1-1"/>
-<wire x1="27.65970625" y1="51.006609375" x2="29.8594125" y2="52.276609375" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="73.2" y="109"/>
+<vertex x="73.2" y="104.1"/>
+<vertex x="77.9" y="104.1"/>
+<vertex x="77.9" y="109"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="27.119871875" y="49.50236875"/>
+<vertex x="31.363396875" y="51.95236875"/>
+<vertex x="29.013396875" y="56.0226875"/>
+<vertex x="24.769871875" y="53.5726875"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="101.567690625" y="39.382565625"/>
+<vertex x="97.324165625" y="41.832565625"/>
+<vertex x="94.974165625" y="37.762246875"/>
+<vertex x="99.217690625" y="35.312246875"/>
+</polygon>
+<wire x1="29.8594125" y1="52.276609375" x2="96.592046875" y2="38.20295625" width="0" layer="19" extent="1-1"/>
+<wire x1="76.69" y1="105.25" x2="97.862046875" y2="40.402659375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R5">
 <contactref element="U$3" pad="P1-1"/>
@@ -1201,6 +1272,8 @@ design rules under a new name.</description>
 <vertex x="114.05" y="100.7"/>
 <vertex x="108.7" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON5" pad="A"/>
+<wire x1="109.71" y1="101.8" x2="9.22" y2="-68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B5">
 <contactref element="U$3" pad="P1-13"/>
@@ -1217,6 +1290,8 @@ design rules under a new name.</description>
 <vertex x="102.85" y="100.7"/>
 <vertex x="97.7" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON5" pad="C"/>
+<wire x1="98.71" y1="101.8" x2="19.38" y2="-68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y5">
 <contactref element="U$3" pad="P1-17"/>
@@ -1233,6 +1308,8 @@ design rules under a new name.</description>
 <vertex x="108.35" y="100.7"/>
 <vertex x="103.2" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON5" pad="B"/>
+<wire x1="104.21" y1="101.8" x2="14.3" y2="-68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y6">
 <contactref element="U$3" pad="P1-5"/>
@@ -1249,6 +1326,8 @@ design rules under a new name.</description>
 <vertex x="91.85" y="100.7"/>
 <vertex x="86.7" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON6" pad="B"/>
+<wire x1="87.71" y1="101.8" x2="14.3" y2="-93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R6">
 <contactref element="U$3" pad="P1-9"/>
@@ -1265,6 +1344,8 @@ design rules under a new name.</description>
 <vertex x="97.35" y="100.7"/>
 <vertex x="92.2" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON6" pad="A"/>
+<wire x1="93.21" y1="101.8" x2="9.22" y2="-93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B6">
 <contactref element="U$3" pad="P2-1"/>
@@ -1281,6 +1362,8 @@ design rules under a new name.</description>
 <vertex x="86.35" y="100.7"/>
 <vertex x="81.1" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON6" pad="C"/>
+<wire x1="82.21" y1="101.8" x2="19.38" y2="-93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y7">
 <contactref element="U$3" pad="P4-25"/>
@@ -1297,6 +1380,8 @@ design rules under a new name.</description>
 <vertex x="33.2" y="100.7"/>
 <vertex x="28.05" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON7" pad="B"/>
+<wire x1="29.1" y1="101.8" x2="14.3" y2="-118" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R7">
 <contactref element="U$3" pad="P4-13"/>
@@ -1313,6 +1398,8 @@ design rules under a new name.</description>
 <vertex x="38.7" y="100.7"/>
 <vertex x="33.55" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON7" pad="A"/>
+<wire x1="34.6" y1="101.8" x2="9.22" y2="-118" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B8">
 <contactref element="U$3" pad="P4-9"/>
@@ -1329,6 +1416,8 @@ design rules under a new name.</description>
 <vertex x="44.2" y="100.7"/>
 <vertex x="39.05" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON8" pad="C"/>
+<wire x1="40.1" y1="101.8" x2="19.38" y2="-143" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B7">
 <contactref element="U$3" pad="P4-5"/>
@@ -1345,6 +1434,8 @@ design rules under a new name.</description>
 <vertex x="27.7" y="100.7"/>
 <vertex x="22.5" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON7" pad="C"/>
+<wire x1="23.6" y1="101.8" x2="19.38" y2="-118" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y8">
 <contactref element="U$3" pad="P4-1"/>
@@ -1361,6 +1452,8 @@ design rules under a new name.</description>
 <vertex x="49.7" y="100.7"/>
 <vertex x="44.55" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON8" pad="B"/>
+<wire x1="45.6" y1="101.8" x2="14.3" y2="-143" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R8">
 <contactref element="U$3" pad="P3-5"/>
@@ -1377,6 +1470,8 @@ design rules under a new name.</description>
 <vertex x="55.4" y="100.7"/>
 <vertex x="50.05" y="100.7"/>
 </polygon>
+<contactref element="ESC5_CON8" pad="A"/>
+<wire x1="51.1" y1="101.8" x2="9.22" y2="-143" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R9">
 <contactref element="U$4" pad="P1-1"/>
@@ -1393,6 +1488,8 @@ design rules under a new name.</description>
 <vertex x="85.109471875" y="7.942309375"/>
 <vertex x="82.50946875" y="3.438975"/>
 </polygon>
+<contactref element="ESC5_CON9" pad="A"/>
+<wire x1="82.08945" y1="4.983721875" x2="9.22" y2="-168" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B9">
 <contactref element="U$4" pad="P1-13"/>
@@ -1409,6 +1506,8 @@ design rules under a new name.</description>
 <vertex x="90.593621875" y="17.477740625"/>
 <vertex x="87.99696875" y="12.980209375"/>
 </polygon>
+<contactref element="ESC5_CON9" pad="C"/>
+<wire x1="87.58945" y1="14.51" x2="19.38" y2="-168" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y9">
 <contactref element="U$4" pad="P1-17"/>
@@ -1425,6 +1524,8 @@ design rules under a new name.</description>
 <vertex x="87.85946875" y="12.705446875"/>
 <vertex x="85.27196875" y="8.223765625"/>
 </polygon>
+<contactref element="ESC5_CON9" pad="B"/>
+<wire x1="84.83945" y1="9.7468625" x2="14.3" y2="-168" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y10">
 <contactref element="U$4" pad="P1-5"/>
@@ -1441,6 +1542,8 @@ design rules under a new name.</description>
 <vertex x="96.105221875" y="26.99731875"/>
 <vertex x="93.517725" y="22.515640625"/>
 </polygon>
+<contactref element="ESC5_CON10" pad="B"/>
+<wire x1="93.08945" y1="24.03628125" x2="14.3" y2="-193" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R10">
 <contactref element="U$4" pad="P1-9"/>
@@ -1457,6 +1560,8 @@ design rules under a new name.</description>
 <vertex x="93.35946875" y="22.231728125"/>
 <vertex x="90.76281875" y="17.734196875"/>
 </polygon>
+<contactref element="ESC5_CON10" pad="A"/>
+<wire x1="90.33945" y1="19.273140625" x2="9.22" y2="-193" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B10">
 <contactref element="U$4" pad="P2-1"/>
@@ -1473,6 +1578,8 @@ design rules under a new name.</description>
 <vertex x="98.977771875" y="31.9995125"/>
 <vertex x="96.24696875" y="27.269628125"/>
 </polygon>
+<contactref element="ESC5_CON10" pad="C"/>
+<wire x1="95.83945" y1="28.79941875" x2="19.38" y2="-193" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R11">
 <contactref element="U$4" pad="P3-17"/>
@@ -1489,6 +1596,8 @@ design rules under a new name.</description>
 <vertex x="111.63083125" y="73.394740625"/>
 <vertex x="114.22748125" y="77.892271875"/>
 </polygon>
+<contactref element="ESC5_CON11" pad="A"/>
+<wire x1="119.64445" y1="70.030890625" x2="9.22" y2="-218" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B11">
 <contactref element="U$4" pad="P3-25"/>
@@ -1505,6 +1614,8 @@ design rules under a new name.</description>
 <vertex x="117.15248125" y="82.908521875"/>
 <vertex x="119.752484375" y="87.411853125"/>
 </polygon>
+<contactref element="ESC5_CON11" pad="C"/>
+<wire x1="125.14445" y1="79.55716875" x2="19.38" y2="-218" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y11">
 <contactref element="U$4" pad="P4-17"/>
@@ -1521,6 +1632,8 @@ design rules under a new name.</description>
 <vertex x="114.402484375" y="78.14538125"/>
 <vertex x="116.98998125" y="82.6270625"/>
 </polygon>
+<contactref element="ESC5_CON11" pad="B"/>
+<wire x1="122.39445" y1="74.794028125" x2="14.3" y2="-218" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B12">
 <contactref element="U$4" pad="P4-9"/>
@@ -1537,6 +1650,8 @@ design rules under a new name.</description>
 <vertex x="108.90248125" y="68.619103125"/>
 <vertex x="111.49913125" y="73.11663125"/>
 </polygon>
+<contactref element="ESC5_CON12" pad="C"/>
+<wire x1="116.89445" y1="65.26775" x2="19.38" y2="-243" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Y12">
 <contactref element="U$4" pad="P4-1"/>
@@ -1553,6 +1668,8 @@ design rules under a new name.</description>
 <vertex x="106.119228125" y="63.875159375"/>
 <vertex x="108.706725" y="68.356840625"/>
 </polygon>
+<contactref element="ESC5_CON12" pad="B"/>
+<wire x1="114.14445" y1="60.504609375" x2="14.3" y2="-243" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R12">
 <contactref element="U$4" pad="P3-5"/>
@@ -1569,15 +1686,10 @@ design rules under a new name.</description>
 <vertex x="103.24668125" y="58.872965625"/>
 <vertex x="105.977484375" y="63.602853125"/>
 </polygon>
+<contactref element="ESC5_CON12" pad="A"/>
+<wire x1="111.39445" y1="55.74146875" x2="9.22" y2="-243" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
-<mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
-<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
-</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="8.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1619,6 +1619,17 @@ DIN A3, landscape with location and doc. field</description>
 <part name="U$3" library="THICC_CONNECTOR" deviceset="THICC_CONNECTOR" device=""/>
 <part name="U$4" library="THICC_CONNECTOR" deviceset="THICC_CONNECTOR" device=""/>
 <part name="ESC5_CON1" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON2" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON3" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON4" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON5" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON6" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON7" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON8" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON9" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON10" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON11" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="ESC5_CON12" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1646,6 +1657,39 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="U$4" gate="G$1" x="279.4" y="-187.96" rot="R90"/>
 <instance part="ESC5_CON1" gate="G$1" x="185.42" y="238.76" rot="R90">
 <attribute name="NAME" x="177.8" y="231.14" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON2" gate="G$1" x="205.74" y="238.76" rot="R90">
+<attribute name="NAME" x="198.12" y="231.14" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON3" gate="G$1" x="226.06" y="238.76" rot="R90">
+<attribute name="NAME" x="218.44" y="231.14" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON4" gate="G$1" x="246.38" y="238.76" rot="R90">
+<attribute name="NAME" x="238.76" y="231.14" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON5" gate="G$1" x="553.72" y="233.68" rot="R90">
+<attribute name="NAME" x="546.1" y="226.06" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON6" gate="G$1" x="574.04" y="233.68" rot="R90">
+<attribute name="NAME" x="566.42" y="226.06" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON7" gate="G$1" x="594.36" y="233.68" rot="R90">
+<attribute name="NAME" x="586.74" y="226.06" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON8" gate="G$1" x="614.68" y="233.68" rot="R90">
+<attribute name="NAME" x="607.06" y="226.06" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON9" gate="G$1" x="393.7" y="-45.72" rot="R90">
+<attribute name="NAME" x="386.08" y="-53.34" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON10" gate="G$1" x="414.02" y="-45.72" rot="R90">
+<attribute name="NAME" x="406.4" y="-53.34" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON11" gate="G$1" x="434.34" y="-45.72" rot="R90">
+<attribute name="NAME" x="426.72" y="-53.34" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="ESC5_CON12" gate="G$1" x="454.66" y="-45.72" rot="R90">
+<attribute name="NAME" x="447.04" y="-53.34" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -1688,6 +1732,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="248.92" y="35.56"/>
 <label x="248.92" y="27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON1" gate="G$1" pin="C"/>
+<wire x1="190.5" y1="226.06" x2="190.5" y2="215.9" width="0.1524" layer="91"/>
+<label x="190.5" y="215.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="Y1" class="0">
 <segment>
@@ -1725,6 +1774,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="127" y1="35.56" x2="127" y2="27.94" width="0.1524" layer="91"/>
 <junction x="127" y="35.56"/>
 <label x="127" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON1" gate="G$1" pin="B"/>
+<wire x1="185.42" y1="226.06" x2="185.42" y2="215.9" width="0.1524" layer="91"/>
+<label x="185.42" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R1" class="0">
@@ -1764,6 +1818,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="147.32" y="35.56"/>
 <label x="147.32" y="27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON1" gate="G$1" pin="A"/>
+<wire x1="180.34" y1="226.06" x2="180.34" y2="215.9" width="0.1524" layer="91"/>
+<label x="180.34" y="215.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R2" class="0">
 <segment>
@@ -1801,6 +1860,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="86.36" y1="35.56" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
 <junction x="86.36" y="35.56"/>
 <label x="86.36" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON2" gate="G$1" pin="A"/>
+<wire x1="200.66" y1="226.06" x2="200.66" y2="215.9" width="0.1524" layer="91"/>
+<label x="200.66" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B2" class="0">
@@ -1840,6 +1904,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="187.96" y="35.56"/>
 <label x="187.96" y="27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON2" gate="G$1" pin="C"/>
+<wire x1="210.82" y1="226.06" x2="210.82" y2="215.9" width="0.1524" layer="91"/>
+<label x="210.82" y="215.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="Y2" class="0">
 <segment>
@@ -1877,6 +1946,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="66.04" y1="35.56" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 <junction x="66.04" y="35.56"/>
 <label x="66.04" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON2" gate="G$1" pin="B"/>
+<wire x1="205.74" y1="226.06" x2="205.74" y2="215.9" width="0.1524" layer="91"/>
+<label x="205.74" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R4" class="0">
@@ -1916,6 +1990,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="269.24" y="104.14"/>
 <label x="269.24" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON4" gate="G$1" pin="A"/>
+<wire x1="241.3" y1="226.06" x2="241.3" y2="215.9" width="0.1524" layer="91"/>
+<label x="241.3" y="215.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="Y4" class="0">
 <segment>
@@ -1953,6 +2032,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="147.32" y1="104.14" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
 <junction x="147.32" y="104.14"/>
 <label x="147.32" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON4" gate="G$1" pin="B"/>
+<wire x1="246.38" y1="226.06" x2="246.38" y2="215.9" width="0.1524" layer="91"/>
+<label x="246.38" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B4" class="0">
@@ -1992,6 +2076,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="106.68" y="104.14"/>
 <label x="106.68" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON4" gate="G$1" pin="C"/>
+<wire x1="251.46" y1="226.06" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
+<label x="251.46" y="215.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R3" class="0">
 <segment>
@@ -2029,6 +2118,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="86.36" y1="104.14" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
 <junction x="86.36" y="104.14"/>
 <label x="86.36" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON3" gate="G$1" pin="A"/>
+<wire x1="220.98" y1="226.06" x2="220.98" y2="215.9" width="0.1524" layer="91"/>
+<label x="220.98" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B3" class="0">
@@ -2068,6 +2162,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="167.64" y="104.14"/>
 <label x="167.64" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON3" gate="G$1" pin="C"/>
+<wire x1="231.14" y1="226.06" x2="231.14" y2="215.9" width="0.1524" layer="91"/>
+<label x="231.14" y="215.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="Y3" class="0">
 <segment>
@@ -2105,6 +2204,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="45.72" y1="104.14" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
 <junction x="45.72" y="104.14"/>
 <label x="45.72" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON3" gate="G$1" pin="B"/>
+<wire x1="226.06" y1="226.06" x2="226.06" y2="215.9" width="0.1524" layer="91"/>
+<label x="226.06" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN_L" class="0">
@@ -2426,6 +2530,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="528.32" y="48.26"/>
 <label x="528.32" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON5" gate="G$1" pin="A"/>
+<wire x1="548.64" y1="220.98" x2="548.64" y2="210.82" width="0.1524" layer="91"/>
+<label x="548.64" y="210.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B5" class="0">
 <segment>
@@ -2463,6 +2572,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="629.92" y1="48.26" x2="629.92" y2="40.64" width="0.1524" layer="91"/>
 <junction x="629.92" y="48.26"/>
 <label x="629.92" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON5" gate="G$1" pin="C"/>
+<wire x1="558.8" y1="220.98" x2="558.8" y2="210.82" width="0.1524" layer="91"/>
+<label x="558.8" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Y5" class="0">
@@ -2502,6 +2616,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="650.24" y="48.26"/>
 <label x="650.24" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON5" gate="G$1" pin="B"/>
+<wire x1="553.72" y1="220.98" x2="553.72" y2="210.82" width="0.1524" layer="91"/>
+<label x="553.72" y="210.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="Y6" class="0">
 <segment>
@@ -2539,6 +2658,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="589.28" y1="48.26" x2="589.28" y2="40.64" width="0.1524" layer="91"/>
 <junction x="589.28" y="48.26"/>
 <label x="589.28" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON6" gate="G$1" pin="B"/>
+<wire x1="574.04" y1="220.98" x2="574.04" y2="210.82" width="0.1524" layer="91"/>
+<label x="574.04" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R6" class="0">
@@ -2578,6 +2702,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="609.6" y="48.26"/>
 <label x="609.6" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON6" gate="G$1" pin="A"/>
+<wire x1="568.96" y1="220.98" x2="568.96" y2="210.82" width="0.1524" layer="91"/>
+<label x="568.96" y="210.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B6" class="0">
 <segment>
@@ -2615,6 +2744,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="568.96" y1="48.26" x2="568.96" y2="40.64" width="0.1524" layer="91"/>
 <junction x="568.96" y="48.26"/>
 <label x="568.96" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON6" gate="G$1" pin="C"/>
+<wire x1="579.12" y1="220.98" x2="579.12" y2="210.82" width="0.1524" layer="91"/>
+<label x="579.12" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Y7" class="0">
@@ -2654,6 +2788,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="447.04" y="116.84"/>
 <label x="447.04" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON7" gate="G$1" pin="B"/>
+<wire x1="594.36" y1="220.98" x2="594.36" y2="210.82" width="0.1524" layer="91"/>
+<label x="594.36" y="210.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R7" class="0">
 <segment>
@@ -2691,6 +2830,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="568.96" y1="116.84" x2="568.96" y2="124.46" width="0.1524" layer="91"/>
 <junction x="568.96" y="116.84"/>
 <label x="568.96" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON7" gate="G$1" pin="A"/>
+<wire x1="589.28" y1="220.98" x2="589.28" y2="210.82" width="0.1524" layer="91"/>
+<label x="589.28" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B8" class="0">
@@ -2730,6 +2874,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="589.28" y="116.84"/>
 <label x="589.28" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON8" gate="G$1" pin="C"/>
+<wire x1="619.76" y1="220.98" x2="619.76" y2="210.82" width="0.1524" layer="91"/>
+<label x="619.76" y="210.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B7" class="0">
 <segment>
@@ -2767,6 +2916,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="548.64" y1="116.84" x2="548.64" y2="124.46" width="0.1524" layer="91"/>
 <junction x="548.64" y="116.84"/>
 <label x="548.64" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON7" gate="G$1" pin="C"/>
+<wire x1="599.44" y1="220.98" x2="599.44" y2="210.82" width="0.1524" layer="91"/>
+<label x="599.44" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Y8" class="0">
@@ -2806,6 +2960,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="609.6" y="116.84"/>
 <label x="609.6" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON8" gate="G$1" pin="B"/>
+<wire x1="614.68" y1="220.98" x2="614.68" y2="210.82" width="0.1524" layer="91"/>
+<label x="614.68" y="210.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R8" class="0">
 <segment>
@@ -2843,6 +3002,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="650.24" y1="116.84" x2="650.24" y2="124.46" width="0.1524" layer="91"/>
 <junction x="650.24" y="116.84"/>
 <label x="650.24" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON8" gate="G$1" pin="A"/>
+<wire x1="609.6" y1="220.98" x2="609.6" y2="210.82" width="0.1524" layer="91"/>
+<label x="609.6" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R9" class="0">
@@ -2882,6 +3046,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="353.06" y="-231.14"/>
 <label x="353.06" y="-238.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON9" gate="G$1" pin="A"/>
+<wire x1="388.62" y1="-58.42" x2="388.62" y2="-68.58" width="0.1524" layer="91"/>
+<label x="388.62" y="-68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B9" class="0">
 <segment>
@@ -2919,6 +3088,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="454.66" y1="-231.14" x2="454.66" y2="-238.76" width="0.1524" layer="91"/>
 <junction x="454.66" y="-231.14"/>
 <label x="454.66" y="-238.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON9" gate="G$1" pin="C"/>
+<wire x1="398.78" y1="-58.42" x2="398.78" y2="-68.58" width="0.1524" layer="91"/>
+<label x="398.78" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Y9" class="0">
@@ -2958,6 +3132,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="474.98" y="-231.14"/>
 <label x="474.98" y="-238.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON9" gate="G$1" pin="B"/>
+<wire x1="393.7" y1="-58.42" x2="393.7" y2="-68.58" width="0.1524" layer="91"/>
+<label x="393.7" y="-68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="Y10" class="0">
 <segment>
@@ -2995,6 +3174,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="414.02" y1="-231.14" x2="414.02" y2="-238.76" width="0.1524" layer="91"/>
 <junction x="414.02" y="-231.14"/>
 <label x="414.02" y="-238.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON10" gate="G$1" pin="B"/>
+<wire x1="414.02" y1="-58.42" x2="414.02" y2="-68.58" width="0.1524" layer="91"/>
+<label x="414.02" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R10" class="0">
@@ -3034,6 +3218,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="434.34" y="-231.14"/>
 <label x="434.34" y="-238.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON10" gate="G$1" pin="A"/>
+<wire x1="408.94" y1="-58.42" x2="408.94" y2="-68.58" width="0.1524" layer="91"/>
+<label x="408.94" y="-68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B10" class="0">
 <segment>
@@ -3071,6 +3260,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="393.7" y1="-231.14" x2="393.7" y2="-238.76" width="0.1524" layer="91"/>
 <junction x="393.7" y="-231.14"/>
 <label x="393.7" y="-238.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON10" gate="G$1" pin="C"/>
+<wire x1="419.1" y1="-58.42" x2="419.1" y2="-68.58" width="0.1524" layer="91"/>
+<label x="419.1" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R11" class="0">
@@ -3110,6 +3304,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="292.1" y="-162.56"/>
 <label x="292.1" y="-154.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON11" gate="G$1" pin="A"/>
+<wire x1="429.26" y1="-58.42" x2="429.26" y2="-68.58" width="0.1524" layer="91"/>
+<label x="429.26" y="-68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B11" class="0">
 <segment>
@@ -3147,6 +3346,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="332.74" y1="-162.56" x2="332.74" y2="-154.94" width="0.1524" layer="91"/>
 <junction x="332.74" y="-162.56"/>
 <label x="332.74" y="-154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON11" gate="G$1" pin="C"/>
+<wire x1="439.42" y1="-58.42" x2="439.42" y2="-68.58" width="0.1524" layer="91"/>
+<label x="439.42" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Y11" class="0">
@@ -3186,6 +3390,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="251.46" y="-162.56"/>
 <label x="251.46" y="-154.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON11" gate="G$1" pin="B"/>
+<wire x1="434.34" y1="-58.42" x2="434.34" y2="-68.58" width="0.1524" layer="91"/>
+<label x="434.34" y="-68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="B12" class="0">
 <segment>
@@ -3223,6 +3432,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="414.02" y1="-162.56" x2="414.02" y2="-154.94" width="0.1524" layer="91"/>
 <junction x="414.02" y="-162.56"/>
 <label x="414.02" y="-154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON12" gate="G$1" pin="C"/>
+<wire x1="459.74" y1="-58.42" x2="459.74" y2="-68.58" width="0.1524" layer="91"/>
+<label x="459.74" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Y12" class="0">
@@ -3262,6 +3476,11 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="434.34" y="-162.56"/>
 <label x="434.34" y="-154.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ESC5_CON12" gate="G$1" pin="B"/>
+<wire x1="454.66" y1="-58.42" x2="454.66" y2="-68.58" width="0.1524" layer="91"/>
+<label x="454.66" y="-68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="R12" class="0">
 <segment>
@@ -3299,6 +3518,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="474.98" y1="-162.56" x2="474.98" y2="-154.94" width="0.1524" layer="91"/>
 <junction x="474.98" y="-162.56"/>
 <label x="474.98" y="-154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ESC5_CON12" gate="G$1" pin="A"/>
+<wire x1="449.58" y1="-58.42" x2="449.58" y2="-68.58" width="0.1524" layer="91"/>
+<label x="449.58" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
