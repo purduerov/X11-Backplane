@@ -1601,6 +1601,60 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="BackplaneParts">
+<packages>
+<package name="T2I">
+<wire x1="0" y1="0" x2="0" y2="5.588" width="0.127" layer="21"/>
+<wire x1="0" y1="5.588" x2="17.8054" y2="5.588" width="0.127" layer="21"/>
+<wire x1="17.8054" y1="5.588" x2="17.8054" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.127" layer="21"/>
+<wire x1="13.1318" y1="0" x2="17.78" y2="0" width="0.127" layer="21"/>
+<wire x1="13.1318" y1="-1.016" x2="7.62" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-1.016" x2="7.62" y2="0" width="0.127" layer="21"/>
+<wire x1="13.1318" y1="-1.016" x2="13.1318" y2="0" width="0.127" layer="21"/>
+<pad name="S1" x="0.7" y="2.8" drill="0.7"/>
+<pad name="1" x="8.1" y="2.8" drill="0.8"/>
+<pad name="2" x="10.1" y="2.8" drill="0.8"/>
+<pad name="3" x="12.1" y="2.8" drill="0.8"/>
+<pad name="4" x="14.1" y="2.8" drill="0.8"/>
+<pad name="S2" x="17.1" y="2.8" drill="0.8"/>
+</package>
+</packages>
+<symbols>
+<symbol name="T2I">
+<wire x1="0" y1="7.62" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<pin name="1" x="2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="2" x="5.08" y="12.7" length="middle" rot="R270"/>
+<pin name="3" x="7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="4" x="10.16" y="12.7" length="middle" rot="R270"/>
+<text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="T2I">
+<gates>
+<gate name="G$1" symbol="T2I" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="T2I">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1630,6 +1684,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="ESC5_CON10" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
 <part name="ESC5_CON11" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
 <part name="ESC5_CON12" library="afro_20A_esc" deviceset="3PINCONNECTOR" device=""/>
+<part name="U$10" library="BackplaneParts" deviceset="T2I" device=""/>
+<part name="U$5" library="BackplaneParts" deviceset="T2I" device=""/>
+<part name="U$6" library="BackplaneParts" deviceset="T2I" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1691,6 +1748,9 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="ESC5_CON12" gate="G$1" x="454.66" y="-45.72" rot="R90">
 <attribute name="NAME" x="447.04" y="-53.34" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="U$10" gate="G$1" x="294.64" y="236.22" rot="R270"/>
+<instance part="U$5" gate="G$1" x="294.64" y="213.36" rot="R270"/>
+<instance part="U$6" gate="G$1" x="294.64" y="193.04" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2227,6 +2287,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="302.26" y1="-58.42" x2="302.26" y2="-45.72" width="0.1524" layer="91"/>
 <label x="304.8" y="-53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="3"/>
+<wire x1="307.34" y1="228.6" x2="314.96" y2="228.6" width="0.1524" layer="91"/>
+<label x="309.88" y="228.6" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CAN_H" class="0">
 <segment>
@@ -2243,6 +2308,11 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="U$4" gate="G$1" pin="24"/>
 <wire x1="307.34" y1="-58.42" x2="307.34" y2="-45.72" width="0.1524" layer="91"/>
 <label x="309.88" y="-53.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="2"/>
+<wire x1="307.34" y1="231.14" x2="314.96" y2="231.14" width="0.1524" layer="91"/>
+<label x="309.88" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -2430,6 +2500,20 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="302.26" y="-101.6"/>
 <label x="302.26" y="-106.68" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="4"/>
+<wire x1="307.34" y1="203.2" x2="314.96" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="203.2" x2="314.96" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="3"/>
+<wire x1="314.96" y1="205.74" x2="307.34" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="2"/>
+<wire x1="314.96" y1="205.74" x2="314.96" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="208.28" x2="307.34" y2="208.28" width="0.1524" layer="91"/>
+<junction x="314.96" y="205.74"/>
+<wire x1="314.96" y1="203.2" x2="320.04" y2="203.2" width="0.1524" layer="91"/>
+<junction x="314.96" y="203.2"/>
+<label x="317.5" y="203.2" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+5V_GND" class="0">
 <segment>
@@ -2491,6 +2575,20 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="292.1" y1="-101.6" x2="292.1" y2="-106.68" width="0.1524" layer="91"/>
 <junction x="292.1" y="-101.6"/>
 <label x="292.1" y="-111.76" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="4"/>
+<wire x1="307.34" y1="182.88" x2="314.96" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="182.88" x2="314.96" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="3"/>
+<wire x1="314.96" y1="185.42" x2="307.34" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="2"/>
+<wire x1="314.96" y1="185.42" x2="314.96" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="187.96" x2="307.34" y2="187.96" width="0.1524" layer="91"/>
+<junction x="314.96" y="185.42"/>
+<wire x1="314.96" y1="182.88" x2="320.04" y2="182.88" width="0.1524" layer="91"/>
+<junction x="314.96" y="182.88"/>
+<label x="317.5" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="R5" class="0">

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -678,6 +678,26 @@
 </package>
 </packages>
 </library>
+<library name="BackplaneParts">
+<packages>
+<package name="T2I">
+<wire x1="0" y1="0" x2="0" y2="5.588" width="0.127" layer="21"/>
+<wire x1="0" y1="5.588" x2="17.8054" y2="5.588" width="0.127" layer="21"/>
+<wire x1="17.8054" y1="5.588" x2="17.8054" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.127" layer="21"/>
+<wire x1="13.1318" y1="0" x2="17.78" y2="0" width="0.127" layer="21"/>
+<wire x1="13.1318" y1="-1.016" x2="7.62" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-1.016" x2="7.62" y2="0" width="0.127" layer="21"/>
+<wire x1="13.1318" y1="-1.016" x2="13.1318" y2="0" width="0.127" layer="21"/>
+<pad name="S1" x="0.7" y="2.8" drill="0.7"/>
+<pad name="1" x="8.1" y="2.8" drill="0.8"/>
+<pad name="2" x="10.1" y="2.8" drill="0.8"/>
+<pad name="3" x="12.1" y="2.8" drill="0.8"/>
+<pad name="4" x="14.1" y="2.8" drill="0.8"/>
+<pad name="S2" x="17.1" y="2.8" drill="0.8"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -886,6 +906,9 @@ design rules under a new name.</description>
 <element name="ESC5_CON10" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="83.223203125" y="32.14019375" rot="MR120"/>
 <element name="ESC5_CON11" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="112.17545625" y="82.261340625" rot="MR120"/>
 <element name="ESC5_CON12" library="afro_20A_esc" package="3PINCONNECTOR" value="3PINCONNECTOR" x="103.3983875" y="67.127509375" rot="MR120"/>
+<element name="U$10" library="BackplaneParts" package="T2I" value="T2I" x="57.7" y="115.2" rot="MR180"/>
+<element name="U$5" library="BackplaneParts" package="T2I" value="T2I" x="66.1" y="83.5" rot="MR90"/>
+<element name="U$6" library="BackplaneParts" package="T2I" value="T2I" x="74.2" y="83.5" rot="MR90"/>
 </elements>
 <signals>
 <signal name="B1">
@@ -1111,15 +1134,34 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="23"/>
 <contactref element="U$3" pad="23"/>
 <contactref element="U$4" pad="23"/>
-<wire x1="106.411753125" y1="50.131184375" x2="61.45" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="34.00970625" y1="40.008084375" x2="106.411753125" y2="50.131184375" width="0" layer="19" extent="1-1"/>
+<contactref element="U$10" pad="3"/>
+<wire x1="61.45" y1="107.79" x2="61.45" y2="109.25" width="0.254" layer="1"/>
+<wire x1="62.5" y1="110.3" x2="68.7" y2="110.3" width="0.254" layer="1"/>
+<wire x1="68.7" y1="110.3" x2="69.8" y2="111.4" width="0.254" layer="1"/>
+<wire x1="69.8" y1="111.4" x2="69.8" y2="112.4" width="0.254" layer="1"/>
+<wire x1="61.45" y1="109.25" x2="62.5" y2="110.3" width="0.254" layer="1"/>
+<wire x1="61.45" y1="107.79" x2="61.45" y2="106.95" width="0.254" layer="16"/>
+<wire x1="61.2" y1="106.7" x2="57.4" y2="106.7" width="0.254" layer="16"/>
+<wire x1="57.4" y1="106.7" x2="57.1" y2="106.4" width="0.254" layer="16"/>
+<wire x1="57.1" y1="106.4" x2="57.1" y2="103.9" width="0.254" layer="16"/>
+<wire x1="61.45" y1="106.95" x2="61.2" y2="106.7" width="0.254" layer="16"/>
+<wire x1="34.00970625" y1="40.008084375" x2="57.1" y2="103.9" width="0" layer="19" extent="16-16"/>
+<wire x1="106.411753125" y1="50.131184375" x2="68.7" y2="110.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CAN_H">
 <contactref element="U$2" pad="24"/>
 <contactref element="U$3" pad="24"/>
 <contactref element="U$4" pad="24"/>
-<wire x1="107.681753125" y1="52.3308875" x2="58.91" y2="107.79" width="0" layer="19" extent="1-1"/>
-<wire x1="35.27970625" y1="37.80838125" x2="107.681753125" y2="52.3308875" width="0" layer="19" extent="1-1"/>
+<contactref element="U$10" pad="2"/>
+<wire x1="58.91" y1="107.79" x2="62.22" y2="111.1" width="0.254" layer="1"/>
+<wire x1="62.22" y1="111.1" x2="66.8" y2="111.1" width="0.254" layer="1"/>
+<wire x1="66.8" y1="111.1" x2="67.8" y2="112.1" width="0.254" layer="1"/>
+<wire x1="67.8" y1="112.1" x2="67.8" y2="112.4" width="0.254" layer="1"/>
+<wire x1="58.91" y1="107.79" x2="57.89" y2="107.79" width="0.254" layer="16"/>
+<wire x1="57.89" y1="107.79" x2="56.5" y2="106.4" width="0.254" layer="16"/>
+<wire x1="56.5" y1="106.4" x2="56.5" y2="103.9" width="0.254" layer="16"/>
+<wire x1="66.8" y1="111.1" x2="107.681753125" y2="52.3308875" width="0" layer="19" extent="1-1"/>
+<wire x1="35.27970625" y1="37.80838125" x2="56.5" y2="103.9" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+12V">
 <contactref element="U$2" pad="16"/>
@@ -1135,10 +1177,10 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="7"/>
 <contactref element="U$4" pad="8"/>
 <polygon width="0.1524" layer="1">
-<vertex x="57.6" y="106.5"/>
+<vertex x="57.6" y="106.4"/>
 <vertex x="57.6" y="101.4"/>
 <vertex x="62.6" y="101.4"/>
-<vertex x="62.6" y="106.5"/>
+<vertex x="62.6" y="106.4"/>
 </polygon>
 <polygon width="0.1524" layer="1">
 <vertex x="37.084934375" y="37.242371875"/>
@@ -1223,8 +1265,22 @@ design rules under a new name.</description>
 <vertex x="97.574165625" y="42.265578125"/>
 <vertex x="99.874165625" y="46.24929375"/>
 </polygon>
-<wire x1="32.3994125" y1="47.8772" x2="99.132046875" y2="42.602365625" width="0" layer="19" extent="1-1"/>
-<wire x1="71.61" y1="105.25" x2="100.402046875" y2="44.80206875" width="0" layer="19" extent="1-1"/>
+<contactref element="U$5" pad="4"/>
+<contactref element="U$5" pad="3"/>
+<contactref element="U$5" pad="2"/>
+<polygon width="0.1524" layer="1">
+<vertex x="72.8" y="104.3"/>
+<vertex x="72.8" y="93.9"/>
+<vertex x="71.2" y="92.3"/>
+<vertex x="68.5" y="92.3"/>
+<vertex x="67.9" y="92.9"/>
+<vertex x="67.9" y="101.6"/>
+<vertex x="68.1" y="101.8"/>
+<vertex x="68.1" y="104.1"/>
+<vertex x="72.6" y="104.1"/>
+</polygon>
+<wire x1="68.9" y1="93.6" x2="100.402046875" y2="44.80206875" width="0" layer="19" extent="1-1"/>
+<wire x1="31.1294125" y1="50.076903125" x2="68.9" y2="93.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V_GND">
 <contactref element="U$2" pad="17"/>
@@ -1257,8 +1313,21 @@ design rules under a new name.</description>
 <vertex x="94.974165625" y="37.762246875"/>
 <vertex x="99.217690625" y="35.312246875"/>
 </polygon>
-<wire x1="29.8594125" y1="52.276609375" x2="96.592046875" y2="38.20295625" width="0" layer="19" extent="1-1"/>
-<wire x1="76.69" y1="105.25" x2="97.862046875" y2="40.402659375" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="73.2" y="104.1"/>
+<vertex x="73.2" y="93.9"/>
+<vertex x="74.7" y="92.4"/>
+<vertex x="78.1" y="92.4"/>
+<vertex x="78.9" y="93.2"/>
+<vertex x="78.9" y="100.9"/>
+<vertex x="77.9" y="101.9"/>
+<vertex x="77.9" y="104.1"/>
+</polygon>
+<contactref element="U$6" pad="4"/>
+<contactref element="U$6" pad="3"/>
+<contactref element="U$6" pad="2"/>
+<wire x1="77" y1="93.6" x2="97.862046875" y2="40.402659375" width="0" layer="19" extent="1-1"/>
+<wire x1="28.5894125" y1="54.4763125" x2="77" y2="93.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R5">
 <contactref element="U$3" pad="P1-1"/>
