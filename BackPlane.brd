@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="8.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -167,6 +167,24 @@
 <circle x="43.906440625" y="79.466440625" radius="3.324859375" width="0.1524" layer="25"/>
 <circle x="90.650059375" y="79.466440625" radius="3.324859375" width="0.1524" layer="25"/>
 <circle x="67.27698125" y="38.98391875" radius="3.324859375" width="0.1524" layer="25"/>
+<text x="41.3766" y="83.5914" size="1.016" layer="25">5/64" Hex</text>
+<text x="12.301315625" y="101.0446" size="1.016" layer="25" rot="R240">5/64" Hex</text>
+<text x="32.2834" y="90.3986" size="1.016" layer="25">3/32" Hex</text>
+<text x="56.8452" y="81.8896" size="1.016" layer="25" rot="R90">+12V</text>
+<text x="71.5518" y="91.5162" size="1.016" layer="25" rot="R90">+12V_GND</text>
+<text x="57.023" y="65.6336" size="1.016" layer="25" rot="R90">+12V</text>
+<text x="57.1246" y="45.9994" size="1.016" layer="25" rot="R90">+12V</text>
+<text x="71.755" y="48.895" size="1.016" layer="25" rot="R90">+12V_GND</text>
+<text x="78.6892" y="86.106" size="1.016" layer="25" rot="R90">+5V</text>
+<text x="86.487" y="75.057" size="1.016" layer="25" rot="R90">+5V_GND</text>
+<text x="23.1902" y="49.8602" size="1.016" layer="25" rot="R210">CAN</text>
+<text x="76.3016" y="114.2238" size="1.016" layer="25">CAN</text>
+<text x="77.1906" y="49.1998" size="1.016" layer="25">BACKPLANE V1   1/7/2019
+
+Designed By:
+Jacob Bobson
+Jason King
+Tyler Stagge</text>
 </plain>
 <libraries>
 <library name="board_outlines">
@@ -795,9 +813,6 @@ Please make sure your boards conform to these design rules.
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
-<param name="checkNames" value="1"/>
-<param name="checkWireStubs" value="1"/>
-<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1912,13 +1927,12 @@ Please make sure your boards conform to these design rules.
 <wire x1="105.6894" y1="59.563" x2="107.064321875" y2="58.24146875" width="2.54" layer="1"/>
 </signal>
 </signals>
-<mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
-<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
-</mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
