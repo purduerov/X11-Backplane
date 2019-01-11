@@ -1702,7 +1702,6 @@ DIN A3, landscape with location and doc. field</description>
 <text x="304.8" y="172.72" size="1.778" layer="91">12V to Solenoid Box</text>
 <text x="304.8" y="213.36" size="1.778" layer="91">5V to Logic</text>
 <text x="302.26" y="243.84" size="1.778" layer="91">CAN to Logic</text>
-<text x="325.12" y="81.28" size="1.778" layer="91">Add Holes for EXTRA CAN HL AND 12/5 Volts</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-2.54" y="0">
